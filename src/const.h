@@ -29,5 +29,5 @@ const unsigned long r4Duration = 2000; // 0.5 сек для Реле 4
 
 #define relay1 02
 #define relay2 04
-#define relay3 17
+#define relay3 33
 #define relay4 32

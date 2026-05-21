@@ -37,15 +37,15 @@ void handle_custom_commands() {
         // ОБРОБКА КОМАНДИ А (Реле 2)
         if (command == "CMD_A") {
             digitalWrite(relay1, HIGH);
-            r2StartTime = millis(); 
-            r2Active = true;
+            r1StartTime = millis();
+            r1Active = true;
             Serial.println("Relay 1: ON (Timer started)");
-        } 
+        }
         // ОБРОБКА КОМАНДИ Б (Реле 1)
         else if (command == "CMD_B") {
             digitalWrite(relay2, HIGH);
-            r1StartTime = millis();
-            r1Active = true;
+            r2StartTime = millis();
+            r2Active = true;
             Serial.println("Relay 2: ON (Timer started)");
         }
         // ОБРОБКА КОМАНДИ C (Реле 3)
